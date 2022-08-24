@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Buenard&family=Cormorant+Garamond:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.nav-container, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.galeria h1, .noti h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.texto-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.acerca-de {
+  text-align: center; }
+  .acerca-de h1 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fd7f18; }
+  .acerca-de div {
+    margin-left: 40px;
+    margin-bottom: 50px; }
+    .acerca-de div h2 {
+      color: #fd7f18; }
+    .acerca-de div p {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    .acerca-de div img {
+      width: 50%; }
+
+.primer-h1 {
+  margin-top: 20px;
+  font-family: 'Bebas Neue';
+  text-align: center; }
+
+.formulario-supremo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 30px;
+  margin: 20px 90px 40px 90px;
+  border-radius: 10px;
+  border: 2px solid #fd7f18; }
+
+.btn-primary {
+  background-color: #fd7f18;
+  border: none; }
+  .btn-primary:hover {
+    background-color: #222; }
+
+.form-check-input:checked {
+  background-color: #fd7f18;
+  border-color: #fd7f18;
+  border: none; }
+
+.coment {
+  margin-top: 15px; }
+
+.horarios {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin-left: 90px;
+  margin-bottom: 40px; }
+
+.contenedor-contactos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.contacto h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px; }
+
+.contenedor-contactos div a img {
+  width: 10%; }
+
+.mapa h2,
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.mapa {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 570px) {
+  .formulario-supremo {
+    text-align: center; } }
+
+@media screen and (max-width: 970px) {
+  .contenedor-contactos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 100px; }
+    .contenedor-contactos div h2 {
+      font-size: 15px; }
+    .contenedor-contactos div a img {
+      width: 5%; } }
+
+.galeria h1 {
+  background-image: url(../img/casa-kame.jpg);
+  font-size: 100px;
+  font-family: 'Bebas Neue';
+  color: #222;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 25vh; }
+
+.grid-galeria {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px;
+  align-content: center; }
+  .grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; }
+
+@media screen and (max-width: 550px) {
+  .grid-galeria {
+    flex-direction: column;
+    grid-template-columns: 1fr; } }
+
+.main-info {
+  margin-left: 15px; }
+  .main-info h1 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fd7f18; }
+  .main-info img {
+    width: 3%; }
+
+.main-info div {
+  margin-bottom: 30px; }
+  .main-info div h2 {
+    color: #fd7f18; }
+
+.section-info {
+  font-size: 20px; }
+  .section-info div h2 {
+    color: #fd7f18; }
+
+@media screen and (max-width: 500px) {
+  .main-info h1 img {
+    width: 8%; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav-container {
+  background-color: #222;
+  width: 100%;
+  height: 100px;
+  color: #fff; }
+  .nav-container a img {
+    width: 12%;
+    margin: 10px; }
+
+.nav-menu ul li {
+  display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none; }
+  .nav-menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+    border-radius: 3px; }
+    .nav-menu ul li a:hover {
+      color: #fd7f18; }
+
+.nav-input:checked + .nav-menu {
+  background-color: #222; }
+
+.nav-img {
+  width: 7%; }
+
+.nav-label,
+.nav-input {
+  display: none; }
+
+@media (max-width: 985px) {
+  .nav-label {
+    display: inline;
+    cursor: pointer; }
+    .nav-label img {
+      text-align: end;
+      width: 5%; }
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background-color: #222;
+    width: 100%;
+    left: 0;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out; }
+    .nav-menu:hover {
+      color: #fd7f18; }
+    .nav-menu ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-top: 20px; }
+      .nav-menu ul li {
+        margin-top: 10px; }
+  .nav-item {
+    background-color: transparent; }
+    .nav-item:hover {
+      color: #222; }
+  .nav-input:checked + .nav-menu {
+    clip-path: circle(100% at center); } }
+
+.texto-h1 {
+  font-size: 100px;
+  font-family: 'Bebas Neue';
+  color: #222;
+  background-image: url(../img/casa-kame.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 90vh; }
+
+.texto-h2 {
+  background-color: #fd7f18;
+  padding: 5px;
+  width: 200px;
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.img-main {
+  font-family: 'Bebas Neue';
+  display: grid;
+  grid-template-columns: 100vh 100vh;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (max-width: 440px) {
+  .texto-h1 {
+    font-size: 65px; } }
+
+.catalogo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: auto; }
+  .catalogo img {
+    height: 300px;
+    object-fit: cover; }
+  .catalogo div a {
+    text-decoration: none;
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+    width: 90px;
+    border: none;
+    border-radius: 3px; }
+    .catalogo div a:hover {
+      background-color: #fd7f18;
+      color: #fff;
+      border: none; }
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center; }
+
+.noti {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px; }
+  .noti h2 {
+    background-image: url(../img/casa-kame.jpg);
+    font-size: 100px;
+    font-family: 'Bebas Neue';
+    color: #222;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-top: 100px;
+    width: 100%;
+    height: 25vh; }
+
+.noti iframe {
+  margin-bottom: 30px; }
+
+@media screen and (max-width: 900px) {
+  .catalogo {
+    flex-direction: column;
+    align-items: center; }
+    .catalogo div {
+      margin-bottom: 30px; } }
+
+.footer {
+  background-color: #222;
+  width: 100vw;
+  height: 250px;
+  padding: 0; }
+  .footer ul li {
+    list-style: none;
+    margin: 10px;
+    text-align: center; }
+    .footer ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 6px;
+      border-radius: 3px; }
+      .footer ul li a:hover {
+        font-size: small;
+        color: #fd7f18; }
+
+.footer img {
+  margin: 10px;
+  width: 10%; }
+
+.redes {
+  margin: 10px;
+  width: 25%; }
+  .redes img:hover {
+    width: 13%; }
+
+@media screen and (max-width: 460) {
+  .footer {
+    width: 100%;
+    height: 100%; }
+    .footer ul {
+      flex-direction: column;
+      text-align: center; }
+      .footer ul li {
+        height: auto;
+        text-align: center; } }

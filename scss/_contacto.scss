@@ -1,0 +1,98 @@
+.primer-h1 {
+    margin-top: 20px;
+    font-family: 'Bebas Neue';
+    text-align: center;
+}
+
+.formulario-supremo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    margin: 20px 90px 40px 90px;
+    border-radius: 10px;
+    border: 2px solid $color-naranja;
+}
+
+.btn-primary {
+    background-color: $color-naranja;
+    border: none;
+
+    &:hover {
+        background-color: $color-negro;
+    }
+}
+
+.form-check-input:checked {
+    background-color: $color-naranja;
+    border-color: $color-naranja;
+    border: none;
+}
+
+.coment {
+    margin-top: 15px;
+}
+
+.horarios {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+}
+
+.contenedor-contactos {
+    @include flex (flex, space-evenly, center);
+    margin-bottom: 40px;
+}
+
+.contacto {
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+}
+
+.contenedor-contactos {
+    div {
+        a {
+            img {
+                width: 10%;
+            }
+        }
+    }
+}
+
+.mapa h2,
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:570px) {
+    .formulario-supremo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .contenedor-contactos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 100px;
+
+        div {
+            h2 {
+                font-size: 15px;
+            }
+
+            a {
+                img {
+                    width: 5%;
+                }
+            }
+        }
+    }
+}
