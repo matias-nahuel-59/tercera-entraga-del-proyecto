@@ -1,6 +1,4 @@
 .main-info {
-    margin-left: 15px;
-
     h1 {
         font-family: 'Bebas Neue';
         font-size: 50px;
@@ -8,16 +6,20 @@
         margin-bottom: 30px;
         text-align: center;
         color: $color-naranja;
+        img{
+            margin-left: 10px;
+        }
     }
 
     img {
+        margin-left: 13px;
         width: 3%;
     }
 }
 
 .main-info {
     div {
-        margin-bottom: 30px;
+        margin-bottom: 35px;
 
         h2 {
             color: $color-naranja;
@@ -26,12 +28,27 @@
 }
 
 .section-info {
-    font-size: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
 
     div {
         h2 {
             color: $color-naranja;
 
+        }
+
+        ul {
+            li {
+                font-size: 16px;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
         }
     }
 }
@@ -39,8 +56,18 @@
 @media screen and (max-width:500px) {
     .main-info {
         h1 {
+            font-size: 35px;
             img {
-                width: 8%;
+                width: 7%;
+            }
+        }
+    }
+    .section-info{
+        div{
+            h2{
+                img{
+                    width: 9%;
+                }
             }
         }
     }

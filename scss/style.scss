@@ -12,7 +12,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
+
 
 // PAGINA PRINCIPAL
 
@@ -23,11 +25,10 @@
     width: 100%;
     height: 100px;
     color: $color-blanco;
-    
-
     a {
         img {
-            width: 12%;
+            margin-left: 15px;
+            width: 60px;
             margin: 10px;
         }
     }
@@ -36,6 +37,7 @@
 .nav-menu {
 
     ul {
+        margin-right: 15px;
         
          li {
             display: inline-block;
@@ -63,23 +65,23 @@
     background-color: $color-negro;
 }
 
-.nav-img {
-    width: 7%;
-}
-
 .nav-label,
 .nav-input {
     display: none;
 }
 
 @media (max-width:985px) {
+    body{
+        max-width: 100%;
+    }
     .nav-label {
-        display: inline;
+        display: block;
         cursor: pointer;
 
         img {
-            text-align: end;
-            width: 5%;
+            margin-right: 15px;
+            text-align: center;
+            width: 35px;
         }
     }
 
@@ -121,9 +123,11 @@
     }
 
     .nav-input:checked+.nav-menu {
+        z-index: 1;
         clip-path: circle(100% at center);
     }
 }
+
 
 
 // main
@@ -163,9 +167,11 @@
 
 @media screen and (max-width: 440px) {
     .texto-h1 {
-        font-size: 65px;
+        font-size: 60px;
+        height: 30vh;
     }
 }
+
 
 .catalogo {
     @include flex (flex, space-evenly, center);
@@ -202,6 +208,9 @@
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: center;
+    p{
+        text-align: center;
+    }
 }
 
 .noti {
@@ -225,11 +234,17 @@
 
 .noti {
     iframe {
-        margin-bottom: 30px;
+        padding: 0px 20px 30px 20px;
     }
 }
 
 @media screen and (max-width: 900px) {
+    .noti{
+        h2{
+            font-size: 60px;
+            height: 15vh;
+        }
+    }
     .catalogo {
         flex-direction: column;
         align-items: center;
@@ -270,6 +285,9 @@
 }
 
 .footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
     img {
         margin: 10px;
         width: 10%;
@@ -278,10 +296,8 @@
 
 .redes {
     margin: 10px;
-    width: 25%;
-
-    img:hover {
-        width: 13%;
+    img{
+        width: 35px;
     }
 }
 
