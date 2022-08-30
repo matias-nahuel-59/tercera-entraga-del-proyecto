@@ -65,9 +65,18 @@
     }
     .section-info{
         div{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
             h2{
                 img{
                     width: 9%;
+                }
+            }
+            ul{
+                li{
+                    list-style: none;
                 }
             }
         }
