@@ -179,15 +179,15 @@
 .catalogo {
     @include flex (flex, space-evenly, center);
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     overflow: auto;
-
     img {
         height: 300px;
         object-fit: cover;
     }
 
     div {
+
         a {
             text-decoration: none;
             background-color: $color-negro;
@@ -206,12 +206,16 @@
     }
 }
 
+.card:hover{
+    border-radius: 8px;
+    border: 2px solid $color-naranja
+}
+
 .card-body {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
-    justify-content: center;
-
+    justify-content: space-evenly;
     p {
         text-align: center;
     }
@@ -230,7 +234,7 @@
         color: $color-negro;
         background-size: cover;
         background-position: 50% 50%;
-        margin-top: 100px;
+        margin-top: 70px;
         width: 100%;
         height: 25vh;
         @extend %flex-center;
@@ -280,6 +284,7 @@
     ul {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
+
         li {
             list-style: none;
             margin: 10px;
@@ -292,8 +297,8 @@
                 border-radius: 3px;
 
                 &:hover {
-                    font-size: small;
-                    color: $color-naranja
+                    font-size: 18px;
+                    color: $color-naranja;
                 }
             }
         }
