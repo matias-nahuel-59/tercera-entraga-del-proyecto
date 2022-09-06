@@ -171,14 +171,14 @@
 @media screen and (max-width: 440px) {
     .texto-h1 {
         font-size: 60px;
-        height: 30vh;
+        height: 40vh;
     }
 }
 
 // CARDS
 .catalogo {
     @include flex (flex, space-evenly, center);
-    margin-top: 30px;
+    margin-top: 40px;
     img {
         height: 300px;
         object-fit: cover;

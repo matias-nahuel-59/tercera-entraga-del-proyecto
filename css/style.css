@@ -34,8 +34,8 @@
   .acerca-de h1 {
     font-size: 100px;
     font-family: 'Bebas Neue';
-    color: #222;
-    background-image: url(../img/paisaje.jpg);
+    color: #e43a19;
+    background-image: url(../img/saga-futuro.jpg);
     background-size: cover;
     background-position: 50% 50%;
     width: 100%;
@@ -52,6 +52,11 @@
       object-fit: cover;
       width: 800px;
       height: 90vh; }
+
+@media screen and (max-width: 440px) {
+  .acerca-de h1 {
+    font-size: 60px;
+    height: 46vh; } }
 
 @media screen and (max-width: 1200px) {
   .acerca-de div {
@@ -349,13 +354,13 @@ p {
 @media screen and (max-width: 440px) {
   .texto-h1 {
     font-size: 60px;
-    height: 30vh; } }
+    height: 40vh; } }
 
 .catalogo {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 30px; }
+  margin-top: 40px; }
   .catalogo img {
     height: 300px;
     object-fit: cover; }

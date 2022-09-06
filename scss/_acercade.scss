@@ -5,8 +5,8 @@
     h1 {
         font-size: 100px;
         font-family: 'Bebas Neue';
-        color: $color-negro;
-        background-image: url(../img/paisaje.jpg);
+        color: #e43a19;
+        background-image: url(../img/saga-futuro.jpg);
         background-size: cover;
         background-position: 50% 50%;
         width: 100%;
@@ -32,6 +32,15 @@
             object-fit: cover;
             width: 800px;
             height: 90vh;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .acerca-de {
+        h1 {
+            font-size: 60px;
+            height: 46vh;
         }
     }
 }
